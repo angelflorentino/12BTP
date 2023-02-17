@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla ejemplo</title>
+</head>
+<body>
+
+    <h1>Ejemplos vistos 17/02</h1><hr>
+
+    <table border="2" cellspacing="0" cellpadding="10px"> <!-- Creación de la tabla, se establece el tamaño del borde (px que ocupa) y el espaciado entre celdas, 0 para que no sea visible el borde individual de cada celda. agrego cellpadding para que las celdas guarden más espacio al contenido.-->
+
+        <tr>
+            <td colspan="2" align="center">Ingresos</td> <!-- Se hace la primera fila, solo una columna que es la fusión de dos, logrado por medio del colspan, alineamiento al centro. -->
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">2023</td>   <!-- Lo mismo que el anterior. -->
+        </tr>
+
+        <tr>
+            <td rowspan="2">Enero</td>  <!-- En este caso, el diseño requiere que se fusionen 2 filas, para dar lugar a una celda con dos filas de alto y una columna de ancho. -->
+            <td>L.100</td>  <!-- Dato de la columna contigua a enero, uno en una fila y otro en otra. -->
+        </tr>
+
+        <tr>
+            <td align="center">L.50</td> <!-- Segundo dato de enero, en otra fila y solo ocupa una columna. -->
+        </tr>
+
+        <tr> <!-- En esta fila todo se hace normalmente, no afecta poner alineamiento en mi caso, pero se podría colocar-->
+            <td>Febrero</td>
+            <td>L.75</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
