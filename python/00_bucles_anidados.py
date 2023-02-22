@@ -26,3 +26,12 @@ for i in range(n+1):
     for i2 in range(i):
         print(i, end=" ")   # acá se imprime i, que corresponde también al número de elementos que se imprimirán, el sub-bucle imprime i, i veces.
     print("")
+
+n = int(input("Introduce un número entero positivo: "))
+num = 1
+
+for i in range(1, n+1):
+    for j in range(i):
+        print(num, end="")
+        num += 1
+    print()
